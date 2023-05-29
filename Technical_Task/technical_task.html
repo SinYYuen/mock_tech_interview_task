@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+
+//Task 1
+const stringsArray = ["cat", "kitty", "dog", "kitten", "doggy", "puppy"];
+
+stringsArray.sort((a,b) => a.length - b.length);
+
+console.log(stringsArray);
+
+//Task 2
+var myArray = ['cat', 'dog', 'kitty', 'puppy', 'doggy', 'kitten'];
+
+var newArray = myArray.map(function(str) {
+  return str.slice(1, -1);
+});
+
+console.log(newArray);
+
+//Task 3
+
+const positionToRemove = 1; 
+
+var modifiedArray = myArray.map(function(str) {
+  var characters = str.split(''); 
+  characters.splice(positionToRemove, 1); 
+  return characters.join(''); 
+});
+
+console.log(modifiedArray);
+
+    </script>
+    
+</body>
+</html>
